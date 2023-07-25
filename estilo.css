@@ -1,0 +1,34 @@
+/* Estilos para hacer la barra de navegación transparente */
+body {
+    padding-top: 70px; /* Ajusta este valor según el tamaño de tu barra de navegación */
+    background-color: #C7E4FF;
+}
+
+.navbar {
+    background-color: transparent;
+    border-bottom: none;
+    transition: background-color 0.3s ease;    
+}
+
+.navbar.transparent .navbar-nav .nav-link {
+    color: blue; /* Color de las letras del menú (azul) */
+    font-family: 'Acumin Variable Concept', sans-serif;
+    font-weight: 700;
+    transition: color 0.3s ease;
+
+}
+
+.navbar.transparent .navbar-nav .nav-link:hover {
+    color: green; /* Color de las letras al pasar el ratón por encima (verde) */
+}
+
+.navbar.transparent .navbar-nav .nav-item.active .nav-link {
+    background-color: yellow; /* Fondo del elemento activo o seleccionado (amarillo) */
+    color: green; /* Color de las letras del elemento activo o seleccionado (verde) */
+    border-radius: 0.25rem; /* Opcional: Agrega bordes redondeados al botón activo */
+}
+
+a{
+    color: red;
+}
+
